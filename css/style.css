@@ -338,10 +338,12 @@ PORTFOLIO STYLES
 .portfolio-img {
     margin: 0 auto;
     border: 4px solid #07A5B3;
+    box-sizing: border-box;
 }
 
 .portfolio-row {
     padding-bottom: 10px;
+    
 }
 
 .portfolio-view-more {
