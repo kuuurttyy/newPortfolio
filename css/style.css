@@ -129,10 +129,10 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-.section-header {
-    font-size. 7.2rem;
-    padding-bottom: 200px;
-}
+    .section-header {
+        font-size. 7.2rem;
+        padding-bottom: 200px;
+    }
 }
 /* --------------------
 NAVIGATION STYLES
@@ -175,11 +175,11 @@ NAVIGATION STYLES
 }
 
 .navbar-custom .nav li {
-    border-bottom: 1px solid rgba(0,0,0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .navbar-custom .nav li:nth-child(2) {
-    border-top: 1px solid rgba(0,0,0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .navbar-custom .nav li:nth-child(5) {
@@ -210,7 +210,7 @@ NAVIGATION STYLES
 .navbar-custom .nav li a:active {
     outline: 0;
     background-color: transparent;
-/*
+    /*
     padding: 12px;
     border: 3px solid #07A5B3;
 */
@@ -221,10 +221,9 @@ NAVIGATION STYLES
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(241,241,241,0.9);
+    background-color: rgba(241, 241, 241, 0.9);
     padding: 12px;
     border: 3px solid #07A5B3;
-    
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -242,20 +241,16 @@ NAVIGATION STYLES
         transition: background .5s ease-in-out, padding .5s ease-in-out;
         font-size: 1.6rem;
     }
-    
     .navbar-custom .navbar-brand {
-        background-color: rgba(241,241,241, 0.7);
+        background-color: rgba(241, 241, 241, 0.7);
     }
-    
     .navbar-custom .nav li {
-    border-bottom: none;
-        background-color:rgba(241,241,241,0.7);
-}
-
-.navbar-custom .nav li:nth-child(2) {
-    border-top: none;
-}
-    
+        border-bottom: none;
+        background-color: rgba(241, 241, 241, 0.7);
+    }
+    .navbar-custom .nav li:nth-child(2) {
+        border-top: none;
+    }
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .5);
@@ -355,6 +350,7 @@ PORTFOLIO STYLES
     width: auto;
     height: auto;
 }
+
 .portfolio-view-more a {
     padding: 15px;
     border: solid 3px #07A5B3;
@@ -371,9 +367,9 @@ PORTFOLIO STYLES
 }
 
 @media(min-width:768px) {
- .portfolio-view-more {
-    margin: 75px;
- }   
+    .portfolio-view-more {
+        margin: 75px;
+    }
 }
 /* --------------------
 ABOUT STYLES
@@ -383,10 +379,51 @@ ABOUT STYLES
     min-height: 100%;
 }
 
-.about-body h1{
-    padding-bottom: 10px;
+.about-lead {
+    font-size: 2.4rem;
+    font-family: Muli, Helvetica, Arial, sans-serif;
+    font-weight: 300;
 }
 
+.about-name {
+    color: #E62093;
+    font-weight: 400;
+}
+
+.about-img {
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+.about-cv {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-cv a {
+    padding: 15px;
+    border: solid 3px #07A5B3;
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.about-cv a:hover {
+    background-color: #07A5B3;
+    border-color: #0E8E99;
+    color: white;
+}
+
+@media(min-width:768px) {
+    .about-lead {
+        font-size: 3.4rem;
+    }
+    .about-img {
+        margin-top: 0px;
+        ;
+    }
+}
 /* --------------------
 Contact STYLES
 -------------------- */
