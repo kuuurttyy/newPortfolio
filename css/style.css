@@ -501,15 +501,11 @@ textarea {
 .contact-detail-right {
     text-align: right;
     float: right;
-
 }
 
-.contact-detail-right a {
+.contact-detail-right a {}
 
-}
-
-.contact-detail-right a:hover {
-}
+.contact-detail-right a:hover {}
 /* --------------------
 FOOTER STYLES
 -------------------- */
@@ -521,13 +517,18 @@ footer .container {
     border-top: 2px dashed #07A5B3;
     padding: 15px;
 }
-
 /* --------------------
 PORTFOLIO VIEW ALL STYLES
 -------------------- */
 
-#Container .mix{
-	display: none;
+.portfolio-header {
+    font-size: 5.2rem;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#Container .mix {
+    display: none;
 }
 
 .portfolio-filter {
@@ -537,15 +538,18 @@ PORTFOLIO VIEW ALL STYLES
     border: 3px solid transparent;
     padding: 15px;
     margin-bottom: 10px;
+    font-family: Muli;
+    text-transform: uppercase;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    
-
 }
 
 .portfolio-filter:hover {
     cursor: pointer;
     border: 3px solid #07A5B3;
-    
+}
+
+.portfolio-filter.active {
+    border: 3px solid #07A5B3;
 }
