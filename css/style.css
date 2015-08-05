@@ -521,3 +521,31 @@ footer .container {
     border-top: 2px dashed #07A5B3;
     padding: 15px;
 }
+
+/* --------------------
+PORTFOLIO VIEW ALL STYLES
+-------------------- */
+
+#Container .mix{
+	display: none;
+}
+
+.portfolio-filter {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border: 3px solid transparent;
+    padding: 15px;
+    margin-bottom: 10px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    
+
+}
+
+.portfolio-filter:hover {
+    cursor: pointer;
+    border: 3px solid #07A5B3;
+    
+}
