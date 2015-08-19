@@ -622,6 +622,32 @@ PORTFOLIO ITEM PAGE STYLES
     padding-top: 3px;
 }
 
+.back-button {
+    position: fixed;
+    bottom: 0;
+    left: 4%;
+    height: 55px;
+    width: auto;
+    padding: 14px 10px 10px 10px;
+    background-color: #07A5B3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-family: Muli;
+    font-size: 18px;
+    color: white;
+}
+
+.back-button:hover {
+    height: 65px;
+}
+
+.back-button i {
+    position: relative;
+    top: -2px;
+}
+
+/* Embed responsively videos */ 
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
