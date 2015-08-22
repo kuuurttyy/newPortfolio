@@ -1,2 +1,124 @@
 @import '_scss-variables';
 @import '_mixins';
+/* --------------------
+PORTFOLIO VIEW ALL STYLES
+-------------------- */
+
+.portfolio-header {
+    font-size: 4.5rem;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.portfolio-filter {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border: 3px solid transparent;
+    padding: 5px;
+    margin-bottom: 30px;
+    float: left;
+    @include fade-transition(all, 0.2s);
+    &:hover {
+        cursor: pointer;
+        border: 3px solid $color--blue;
+    }
+    h4 {
+        font-size: 16px;
+    }
+}
+
+.portfolio-filter.active {
+    border: 3px solid $color--blue;
+}
+
+#Container {
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -webkit-align-content: flex-start;
+    margin-bottom: 50px;
+    .mix {
+        display: none;
+        text-align: center;
+        a {
+            img {
+                @include fade-transition(all, 0.2s);
+                @include filter(grayscale, 0%);
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .portfolio-header {
+        font-size: 5.2rem;
+    }
+    .portfolio-filter {
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+    #Container {
+        .mix {
+            a {
+                img {
+                    @include filter(grayscale, 100%);
+                    &:hover {
+                        @include filter(grayscale, 0%);
+                    }
+                }
+            }
+        }
+    }
+}
+/* --------------------
+PORTFOLIO ITEM PAGE STYLES
+-------------------- */
+
+.portfolio-item-outer {
+    border: solid 3px $color--blue;
+    margin-bottom: 15px;
+    padding: 10px;
+    .portfolio-item-image {}
+    .portfolio-caption {
+        text-align: center;
+        padding-top: 3px;
+    }
+}
+
+.back-button {
+    position: fixed;
+    bottom: 0;
+    left: 4%;
+    height: 55px;
+    width: auto;
+    padding: 14px 10px 10px 10px;
+    background-color: $color--blue;
+    @include fade-transition(all, 0.2s);
+    font-family: $header-font-stack;
+    font-size: 18px;
+    color: white;
+    &:hover {
+        height: 65px;
+    }
+    i {
+        position: relative;
+        top: -2px;
+    }
+}
+/* Embed responsively videos */
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    iframe, object, embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

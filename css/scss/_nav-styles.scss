@@ -1,6 +1,5 @@
 @import '_scss-variables';
 @import '_mixins';
-
 /* --------------------
 NAVIGATION STYLES
 -------------------- */
@@ -11,116 +10,85 @@ NAVIGATION STYLES
     text-transform: uppercase;
     font-family: $header-font-stack;
     background-color: #dcdcdc;
-    margin: 4px 4px 0 4px;
-    /* keep the nav off the borders */
+    margin: $page-border-width/2 $page-border-width/2 0 $page-border-width/2;
+    a {
+        color: #333;
+    }
+    .navbar-brand {
+        font-weight: 400;
+        font-size: 1.6rem;
+        &:focus {
+            outline: 0;
+        }
+        .navbar-toggle {
+            padding: 4px 6px;
+            font-size: 1.6rem;
+            color: #333;
+            &:focus, &:active {
+                outline: 0;
+            }
+        }
+    }
+    .nav li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        &:nth-child(2) {
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        &:nth-child(5) {
+            border-bottom: none;
+        }
+        a {
+            padding: 15px;
+            border: none;
+            @include fade-transition(all, 0.3s);
+            border: 3px solid transparent;
+            &:hover {
+                outline: 0;
+                border: 3px solid $color--blue;
+                background-color: transparent;
+            }
+            &:focus,
+            &:active {
+                outline: 0;
+                background-color: transparent;
+            }
+        }
+        &:active {
+            outline: 0;
+            a {
+                background-color: rgba(241, 241, 241, 0.9);
+                padding: 12px;
+                border: 3px solid $color--blue;
+                &:hover {
+                    color: $color--pink;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
     .navbar-custom {
-        margin: 7px 7px 0 7px;
-    }
-}
-
-.navbar-custom .navbar-brand {
-    font-weight: 400;
-    font-size: 1.6rem;
-}
-
-.navbar-custom .navbar-brand:focus {
-    outline: 0;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 1.6rem;
-    color: #333;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
-    outline: 0;
-}
-
-.navbar-custom .nav li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.navbar-custom .nav li:nth-child(2) {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.navbar-custom .nav li:nth-child(5) {
-    border-bottom: none;
-}
-
-.navbar-custom a {
-    color: #333;
-}
-
-.navbar-custom .nav li a {
-    box-sizing: border-box;
-    padding: 15px;
-    border: none;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.navbar-custom .nav li a:hover {
-    outline: 0;
-    padding: 12px;
-    border: 3px solid #07A5B3;
-    background-color: transparent;
-}
-
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-    outline: 0;
-    background-color: transparent;
-    /*
-    padding: 12px;
-    border: 3px solid #07A5B3;
-*/
-}
-
-.navbar-custom .nav li.active {
-    outline: 0;
-}
-
-.navbar-custom .nav li.active a {
-    background-color: rgba(241, 241, 241, 0.9);
-    padding: 12px;
-    border: 3px solid #07A5B3;
-}
-
-.navbar-custom .nav li.active a:hover {
-    color: #E62093;
-}
-
-@media(min-width:768px) {
-    .navbar-custom {
+        margin: $page-border-width $page-border-width 0 $page-border-width;
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
-        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        transition: background .5s ease-in-out, padding .5s ease-in-out;
-        font-size: 1.6rem;
-    }
-    .navbar-custom .navbar-brand {
-        background-color: rgba(241, 241, 241, 0.7);
-    }
-    .navbar-custom .nav li {
-        border-bottom: none;
-        background-color: rgba(241, 241, 241, 0.7);
-    }
-    .navbar-custom .nav li:nth-child(2) {
-        border-top: none;
-    }
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .5);
-        background: #000;
+        @include fade-transition(background, 0.5s);
+        .navbar-brand {
+            background-color: rgba(241, 241, 241, 0.7);
+        }
+        .nav li {
+            border-bottom: none;
+            background-color: rgba(241, 241, 241, 0.7);
+            &:nth-child(2) {
+                border-top: none;
+            }
+        }
+        .top-nav-collapse {
+            padding: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            background: #000;
+        }
     }
 }

@@ -1,2 +1,206 @@
 @import '_scss-variables';
 @import '_mixins';
+/* --------------------
+SPLASH STYLES
+-------------------- */
+
+.splash {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #333;
+    background-color: $color--bg;
+    .splash-body {
+        display: table-cell;
+        vertical-align: middle;
+        .splash-logo {
+            position: absolute;
+            top: -100px;
+        }
+        .splash-tag {
+            font-size: 1.8rem;
+            position: relative;
+            top: 100px;
+        }
+        .splash-divider {
+            display: inline-block;
+            position: absolute;
+            border-bottom: 2px dashed $color--blue;
+            margin-bottom: 10vh;
+            width: 80%;
+            left: 10%;
+            bottom: 0;
+            line-height: 2.5em;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .splash {
+        height: 100%;
+        padding: 0;
+        .splash-body {
+            .splash-tag {
+                font-size: 2.6rem;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+/* --------------------
+PORTFOLIO STYLES
+-------------------- */
+
+.portfolio {
+    min-height: 100%;
+    .portfolio-row {
+        padding-bottom: 10px;
+        .img-border {
+            max-width: 500px;
+            border: 4px solid $color--blue;
+            margin: 0 auto;
+            &:hover {
+                border-color: $color--pink;
+            }
+            @include fade-transition(all,
+            0.2s);
+            .portfolio-img {
+                margin: 0 auto;
+                display: block;
+                @include fade-transition(all, 0.2s);
+                @include filter(grayscale, 100%);
+                &:hover {
+                    @include filter(grayscale, 0%);
+                }
+            }
+        }
+    }
+    .portfolio-view-more {
+        text-align: center;
+        margin: 20px auto;
+        width: auto;
+        height: auto;
+        a {
+            padding: 15px;
+            border: solid 3px $color--blue;
+            font-family: $header-font-stack;
+            text-transform: uppercase;
+            color: #333;
+            letter-spacing: 1px;
+            &:hover {
+                @include action-button-hover();
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .portfolio {
+        .portfolio-view-more {
+            margin: 75px;
+        }
+    }
+}
+/* --------------------
+ABOUT STYLES
+-------------------- */
+
+.about {
+    min-height: 100%;
+    .about-lead {
+        font-size: 2.4rem;
+        font-family: $header-font-stack;
+        font-weight: 300;
+    }
+    .about-name {
+        color: $color--pink;
+        font-weight: 400;
+    }
+    .about-img {
+        max-width: 100%;
+        margin-top: 25px;
+    }
+    .about-cv {
+        margin-top: 30px;
+        text-align: center;
+        a {
+            padding: 15px;
+            border: solid 3px $color--blue;
+            font-family: $header-font-stack;
+            text-transform: uppercase;
+            color: #333;
+            letter-spacing: 1px;
+            &:hover {
+                @include action-button-hover();
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .about {
+        .about-lead {
+            font-size: 3.4rem;
+        }
+        .about-img {
+            margin-top: 0px;
+            ;
+        }
+    }
+}
+/* --------------------
+CONTACT STYLES
+-------------------- */
+
+.contact {
+    min-height: 100%;
+    .form-title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .form-control {
+        border: 2px solid $color--blue;
+        border-radius: 0px;
+        background-color: #fafafa;
+    }
+    form {
+        label {
+            text-align: right;
+        }
+        textarea {
+            max-width: 100%;
+        }
+        #submit {
+            border-radius: 0px;
+            background-color: #f1f1f1;
+            border: solid 3px $color--blue;
+            color: #000;
+            font-family: $header-font-stack;
+            text-transform: uppercase;
+            @include fade-transition(all, 0.2s);
+            &:hover {
+                @include action-button-hover();
+            }
+        }
+    }
+}
+
+.contact-right {
+    margin-top: 55px;
+    .contact-highlight {
+        color: $color--pink;
+        font-weight: 400;
+    }
+    .contact-detail {
+        font-size: 2.0rem;
+        .contact-detail-right {
+            text-align: right;
+            float: right;
+            a {
+                &:hover {}
+            }
+        }
+    }
+}

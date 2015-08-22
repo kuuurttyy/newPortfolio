@@ -15,10 +15,10 @@ $timing) {
     color: white;
 }
 
-@mixin filter($filter,
-$value) {
-    -webkit-filter: $filter(value);
-    -moz-filter: $filter(value);
-    -o-filter: $filter(value);
-    filter: $filter(value);
+@mixin filter($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
 }
