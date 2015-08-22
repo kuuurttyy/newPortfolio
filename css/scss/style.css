@@ -1,0 +1,656 @@
+/* --------------------
+    VARIABLES
+-------------------- */
+/* --------------------
+    VARIABLES
+-------------------- */
+/* --------------------
+    VARIABLES
+-------------------- */
+/* --------------------
+    VARIABLES
+-------------------- */
+/* --------------------
+NAVIGATION STYLES
+-------------------- */
+/* line 8, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-family: "Muli", "Helvetica", "Arial", "sans-serif";
+  background-color: #dcdcdc;
+  margin: 4px 4px 0 4px;
+  /* keep the nav off the borders */ }
+
+@media (min-width: 768px) {
+  /* line 19, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+  .navbar-custom {
+    margin: 7px 7px 0 7px; } }
+
+/* line 24, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .navbar-brand {
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+/* line 29, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .navbar-brand:focus {
+  outline: 0; }
+
+/* line 33, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 1.6rem;
+  color: #333; }
+
+/* line 40, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: 0; }
+
+/* line 44, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .nav li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+/* line 48, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .nav li:nth-child(2) {
+  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+/* line 52, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .nav li:nth-child(5) {
+  border-bottom: none; }
+
+/* line 56, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom a {
+  color: #333; }
+
+/* line 60, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .nav li a {
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out; }
+
+/* line 69, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .nav li a:hover {
+  outline: 0;
+  padding: 12px;
+  border: 3px solid #07A5B3;
+  background-color: transparent; }
+
+/* line 77, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: 0;
+  background-color: transparent;
+  /*
+    padding: 12px;
+    border: 3px solid #07A5B3;
+*/ }
+
+/* line 86, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .nav li.active {
+  outline: 0; }
+
+/* line 90, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .nav li.active a {
+  background-color: rgba(241, 241, 241, 0.9);
+  padding: 12px;
+  border: 3px solid #07A5B3; }
+
+/* line 96, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+.navbar-custom .nav li.active a:hover {
+  color: #E62093; }
+
+@media (min-width: 768px) {
+  /* line 101, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: 0 0;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    font-size: 1.6rem; }
+  /* line 111, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+  .navbar-custom .navbar-brand {
+    background-color: rgba(241, 241, 241, 0.7); }
+  /* line 114, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+  .navbar-custom .nav li {
+    border-bottom: none;
+    background-color: rgba(241, 241, 241, 0.7); }
+  /* line 118, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+  .navbar-custom .nav li:nth-child(2) {
+    border-top: none; }
+  /* line 121, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background: #000; } }
+
+/* --------------------
+    VARIABLES
+-------------------- */
+/* --------------------
+    VARIABLES
+-------------------- */
+/* --------------------
+    VARIABLES
+-------------------- */
+/* --------------------
+    VARIABLES
+-------------------- */
+/* line 7, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%; }
+  /* line 11, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  html body {
+    width: 100%;
+    height: 100%;
+    font-family: "Muli", "Helvetica", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #000;
+    background-color: #f1f1f1; }
+
+/* line 27, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0, 0, 35;
+  text-transform: uppercase;
+  font-family: "Muli", "Helvetica", "Arial", "sans-serif";
+  font-weight: 400;
+  letter-spacing: 1px; }
+
+/* line 35, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+p {
+  line-height: 1.5em;
+  margin: 0, 0, 25px; }
+
+/* line 40, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+a {
+  color: #0E8E99;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  /* line 43, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  a:hover {
+    text-decoration: none; }
+
+/* --------------------
+    BORDER STYLES
+-------------------- */
+/* line 55, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.border-top,
+.border-right,
+.border-bottom,
+.border-left {
+  z-index: 999;
+  position: fixed;
+  background-color: #07A5B3; }
+
+/* line 61, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.border-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; }
+
+/* line 68, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.border-right {
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%; }
+
+/* line 75, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.border-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; }
+
+/* line 82, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.border-left {
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%; }
+
+@media (min-width: 768px) {
+  /* line 90, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .border-top {
+    height: 7px; }
+  /* line 93, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .border-right {
+    width: 7px; }
+  /* line 96, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .border-bottom {
+    height: 7px; }
+  /* line 99, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .border-left {
+    width: 7px; } }
+
+/* line 104, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.content-section {
+  padding-top: 100px;
+  padding-left: 14px;
+  padding-right: 14px; }
+
+/* line 110, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.section-header {
+  font-size: 5.2rem;
+  padding-bottom: 100px;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  /* line 117, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .section-header {
+    font-size: 7.2rem;
+    padding-bottom: 200px; } }
+
+/* --------------------
+SPLASH STYLES
+-------------------- */
+/* line 126, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.splash {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  text-align: center;
+  color: #333;
+  /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
+  background-color: #f1f1f1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+/* line 142, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.splash .splash-body {
+  display: table-cell;
+  vertical-align: middle; }
+
+/* line 147, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.splash .splash-body .splash-tag {
+  font-size: 1.8rem;
+  position: relative;
+  top: 100px; }
+
+/* line 153, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.splash-logo {
+  position: absolute;
+  top: -100px; }
+
+/* line 158, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.splash-stripes {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  width: 25%; }
+
+/* line 165, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.splash-divider {
+  display: inline-block;
+  position: absolute;
+  border-bottom: 2px dashed #07A5B3;
+  margin-bottom: 10vh;
+  width: 80%;
+  left: 10%;
+  bottom: 0;
+  line-height: 2.5em; }
+
+@media (min-width: 768px) {
+  /* line 177, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .splash {
+    height: 100%;
+    padding: 0; }
+  /* line 182, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .splash .splash-body .splash-name-top,
+  .splash-name-bottom {
+    font-size: 100px; }
+  /* line 185, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .splash .splash-body .splash-tag {
+    font-size: 2.6rem; }
+  /* line 188, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .splash-tag {
+    margin-top: 25px; } }
+
+/* --------------------
+PORTFOLIO STYLES
+-------------------- */
+/* line 196, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio {
+  min-height: 100%; }
+
+/* line 200, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.img-border {
+  max-width: 500px;
+  border: 4px solid #07A5B3;
+  margin: 0 auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 209, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-img {
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%); }
+
+/* line 222, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%); }
+
+/* line 229, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.img-border:hover {
+  border-color: #E62093; }
+
+/* line 233, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-row {
+  padding-bottom: 10px; }
+
+/* line 237, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-view-more {
+  text-align: center;
+  margin: 20px auto;
+  width: auto;
+  height: auto; }
+
+/* line 244, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-view-more a {
+  padding: 15px;
+  border: solid 3px #07A5B3;
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 1px; }
+
+/* line 253, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-view-more a:hover {
+  background-color: #07A5B3;
+  border-color: #0E8E99;
+  color: white; }
+
+@media (min-width: 768px) {
+  /* line 260, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .portfolio-view-more {
+    margin: 75px; } }
+
+/* --------------------
+ABOUT STYLES
+-------------------- */
+/* line 268, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.about {
+  min-height: 100%; }
+
+/* line 272, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.about-lead {
+  font-size: 2.4rem;
+  font-family: Muli, Helvetica, Arial, sans-serif;
+  font-weight: 300; }
+
+/* line 278, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.about-name {
+  color: #E62093;
+  font-weight: 400; }
+
+/* line 283, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.about-img {
+  max-width: 100%;
+  margin-top: 25px; }
+
+/* line 288, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.about-cv {
+  margin-top: 30px;
+  text-align: center; }
+
+/* line 293, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.about-cv a {
+  padding: 15px;
+  border: solid 3px #07A5B3;
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 1px; }
+
+/* line 302, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.about-cv a:hover {
+  background-color: #07A5B3;
+  border-color: #0E8E99;
+  color: white; }
+
+@media (min-width: 768px) {
+  /* line 309, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .about-lead {
+    font-size: 3.4rem; }
+  /* line 312, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .about-img {
+    margin-top: 0px; } }
+
+/* --------------------
+Contact STYLES
+-------------------- */
+/* line 321, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.contact {
+  min-height: 100%; }
+
+/* line 325, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.form-title {
+  text-align: center;
+  margin-bottom: 25px; }
+
+/* line 330, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.form-control {
+  border: 2px solid #07A5B3;
+  border-radius: 0px;
+  background-color: #fafafa; }
+
+/* line 336, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+form label {
+  text-align: right; }
+
+/* line 340, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+textarea {
+  max-width: 100%; }
+
+/* line 344, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+#submit {
+  border-radius: 0px;
+  background-color: #f1f1f1;
+  border: solid 3px #07A5B3;
+  color: #000;
+  font-family: Muli;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 356, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+#submit:hover {
+  background-color: #07A5B3;
+  border-color: #0E8E99;
+  color: white; }
+
+/* line 362, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.contact-right {
+  margin-top: 55px; }
+
+/* line 366, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.contact-detail {
+  font-size: 2.0rem; }
+
+/* line 370, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.contact-detail-right {
+  text-align: right;
+  float: right; }
+
+/* --------------------
+FOOTER STYLES
+-------------------- */
+/* line 382, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+footer .container {
+  text-align: center;
+  color: #555;
+  font-size: 1.0rem;
+  border-top: 2px dashed #07A5B3;
+  padding: 15px; }
+
+/* --------------------
+PORTFOLIO VIEW ALL STYLES
+-------------------- */
+/* line 393, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-header {
+  font-size: 4.5rem;
+  padding-bottom: 50px;
+  text-align: center; }
+
+/* line 399, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-filter {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  border: 3px solid transparent;
+  padding: 5px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  float: left; }
+
+/* line 412, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-filter:hover {
+  cursor: pointer;
+  border: 3px solid #07A5B3; }
+
+/* line 417, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-filter.active {
+  border: 3px solid #07A5B3; }
+
+/* line 421, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-filter h4 {
+  font-size: 16px; }
+
+/* line 425, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+#Container {
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  -webkit-align-content: flex-start;
+  margin-bottom: 50px; }
+
+/* line 433, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+#Container .mix {
+  display: none;
+  text-align: center; }
+
+/* line 438, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.mix a img {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%); }
+
+@media (min-width: 768px) {
+  /* line 449, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .portfolio-header {
+    font-size: 5.2rem; }
+  /* line 452, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .portfolio-filter {
+    padding: 10px;
+    margin-bottom: 50px; }
+  /* line 456, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .mix a img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%); }
+  /* line 462, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+  .mix a img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%); } }
+
+/* --------------------
+PORTFOLIO ITEM PAGE STYLES
+-------------------- */
+/* line 472, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-item-outer {
+  border: solid 3px #07A5B3;
+  margin-bottom: 15px;
+  padding: 10px; }
+
+/* line 480, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.portfolio-caption {
+  text-align: center;
+  padding-top: 3px; }
+
+/* line 485, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.back-button {
+  position: fixed;
+  bottom: 0;
+  left: 4%;
+  height: 55px;
+  width: auto;
+  padding: 14px 10px 10px 10px;
+  background-color: #07A5B3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: Muli;
+  font-size: 18px;
+  color: white; }
+
+/* line 501, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.back-button:hover {
+  height: 65px; }
+
+/* line 505, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.back-button i {
+  position: relative;
+  top: -2px; }
+
+/* Embed responsively videos */
+/* line 511, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+/* line 521, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
