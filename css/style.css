@@ -282,16 +282,16 @@ SPLASH STYLES
     vertical-align: middle;
 }
 
-.splash .splash-body .splash-name-top,
-.splash-name-bottom {
-    font-size: 40px;
-}
-
 .splash .splash-body .splash-tag {
     font-size: 1.8rem;
+    position: relative;
+    top: 100px;
 }
 
-.splash-logo {}
+.splash-logo {
+    position: absolute;
+    top: -100px;
+}
 
 .splash-stripes {
     position: absolute;
