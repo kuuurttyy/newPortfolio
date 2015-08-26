@@ -41,7 +41,9 @@ html {
         @include fade-transition(all, 0.2s);
         &:hover {
             text-decoration: none;
+            color: $color--pink;
         }
+
     }
 }
 

@@ -16,10 +16,10 @@ $messageBody = "From: " .$name . "\r\n";
 $messageBody .= "\r\n Message: \r\n" .nl2br($message) . "\r\n";
 
 if( empty($name) or empty($email) or empty($subject) or empty($message) ) {
-    echo "You didn't fill out all the required information you silly! Go back and try again.";
+    echo "You didn't fill out all the required information! Go back and try again.";
 } else {
     mail($recieverEmail, $emailSubject, $messageBody, $mailHeader);
-    echo "Your message was sent!";
+    echo "Thanks for your email, I will get back to you as soon as possible!";
 }
 
 ?>

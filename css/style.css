@@ -71,6 +71,7 @@ NAVIGATION STYLES
   outline: 0;
   border: 3px solid #07A5B3;
   background-color: transparent;
+  color: #333;
 }
 
 .navbar-custom .nav li a:focus,
@@ -568,6 +569,7 @@ html a {
 
 html a:hover {
   text-decoration: none;
+  color: #E62093;
 }
 
 .content-section {
