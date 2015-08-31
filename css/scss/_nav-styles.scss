@@ -75,15 +75,18 @@ NAVIGATION STYLES
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
-        @include fade-transition(background, 0.5s);
         .navbar-brand {
             background-color: rgba(241, 241, 241, 0.7);
         }
         .nav li {
             border-bottom: none;
             background-color: rgba(241, 241, 241, 0.7);
+            @include fade-transition(all, 0.3s);
             &:nth-child(2) {
                 border-top: none;
+            }
+            &:hover { 
+                background-color: rgba(241, 241, 241, 1);
             }
         }
         .top-nav-collapse {

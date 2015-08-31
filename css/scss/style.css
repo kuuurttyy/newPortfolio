@@ -87,22 +87,25 @@ NAVIGATION STYLES
     padding: 20px 0;
     border-bottom: 0;
     letter-spacing: 1px;
-    background: 0 0;
-    -webkit-transition: background 0.5s ease-out;
-    -moz-transition: background 0.5s ease-out;
-    -o-transition: background 0.5s ease-out;
-    transition: background 0.5s ease-out; }
-    /* line 79, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+    background: 0 0; }
+    /* line 78, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
     .navbar-custom .navbar-brand {
       background-color: rgba(241, 241, 241, 0.7); }
-    /* line 82, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+    /* line 81, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
     .navbar-custom .nav li {
       border-bottom: none;
-      background-color: rgba(241, 241, 241, 0.7); }
+      background-color: rgba(241, 241, 241, 0.7);
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       /* line 85, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
       .navbar-custom .nav li:nth-child(2) {
         border-top: none; }
-    /* line 89, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+      /* line 88, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
+      .navbar-custom .nav li:hover {
+        background-color: #f1f1f1; }
+    /* line 92, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/_nav-styles.scss */
     .navbar-custom .top-nav-collapse {
       padding: 0;
       border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -510,8 +513,7 @@ html {
     transition: all 0.2s ease-out; }
     /* line 42, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
     html a:hover {
-      text-decoration: none;
-      color: #E62093; }
+      text-decoration: none; }
 
 /* line 50, /Users/kurt/Google Drive/websites/LATEST-portfolio-website/css/scss/style.scss */
 .content-section {
