@@ -1,6 +1,7 @@
 module.exports = function (grunt) {
     grunt.initConfig({
 
+        //concatinate my js files into a single file 
         concat: {
             options: {
                 separator: '\n\n//-----------------------------------\n',
@@ -12,6 +13,7 @@ module.exports = function (grunt) {
             }
         }, //concat
 
+        //concatinate the various js and css from bower components into single files
         bower_concat: {
             all: {
                 dest: 'builds/development/js/_plugins.js',
@@ -19,6 +21,7 @@ module.exports = function (grunt) {
             }
         }, //bower_concat
 
+        //convert scss into css
         sass: {
             dist: {
                 options: {
@@ -31,12 +34,15 @@ module.exports = function (grunt) {
             }
         }, //sass
 
+        //NOT IN USE
+        //used to wire bower components directly into html files
         wiredep: {
             task: {
                 src: 'builds/development/**/*.html'
             }
         }, //wiredep
 
+        //creates a live server to use for live reload
         connect: {
             server: {
                 options: {
@@ -48,6 +54,7 @@ module.exports = function (grunt) {
             }
         }, //connect
 
+        //watches changes in files and then will reload the page when noticed
         watch: {
             options: {
                 spawn: false,
@@ -68,6 +75,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-wiredep');
     grunt.loadNpmTasks('grunt-bower-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     //make default grunt task
     grunt.registerTask('default', ['wiredep', 'bower_concat', 'concat', 'sass', 'connect', 'watch']);
