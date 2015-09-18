@@ -21,42 +21,33 @@ NAVIGATION STYLES
   background-color: #dcdcdc;
   margin: 4px 4px 0 4px;
 }
-
 .navbar-custom a {
   color: #333;
 }
-
 .navbar-custom .navbar-brand {
   font-weight: 400;
   font-size: 1.6rem;
 }
-
 .navbar-custom .navbar-brand:focus {
   outline: 0;
 }
-
 .navbar-custom .navbar-brand .navbar-toggle {
   padding: 4px 6px;
   font-size: 1.6rem;
   color: #333;
 }
-
 .navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
   outline: 0;
 }
-
 .navbar-custom .nav li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-
 .navbar-custom .nav li:nth-child(2) {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
-
 .navbar-custom .nav li:nth-child(5) {
   border-bottom: none;
 }
-
 .navbar-custom .nav li a {
   padding: 15px;
   border: none;
@@ -66,30 +57,24 @@ NAVIGATION STYLES
   transition: all 0.3s ease-out;
   border: 3px solid transparent;
 }
-
 .navbar-custom .nav li a:hover {
   outline: 0;
   border: 3px solid #07A5B3;
   background-color: transparent;
   color: #333;
 }
-
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
   outline: 0;
   background-color: transparent;
 }
-
 .navbar-custom .nav li:active {
   outline: 0;
 }
-
 .navbar-custom .nav li:active a {
   background-color: rgba(241, 241, 241, 0.9);
   padding: 12px;
   border: 3px solid #07A5B3;
 }
-
 .navbar-custom .nav li:active a:hover {
   color: #E62093;
 }
@@ -125,7 +110,6 @@ NAVIGATION STYLES
     background: #000;
   }
 }
-
 /* --------------------
     VARIABLES
 -------------------- */
@@ -144,24 +128,20 @@ SPLASH STYLES
   color: #333;
   background-color: #f1f1f1;
 }
-
 .splash .splash-body {
   display: table-cell;
   vertical-align: middle;
 }
-
 .splash .splash-body .splash-logo {
   position: absolute;
   top: -150px;
   width: 92%;
 }
-
 .splash .splash-body .splash-tag {
   font-size: 1.8rem;
   position: relative;
   top: 50px;
 }
-
 .splash .splash-body .splash-divider {
   display: inline-block;
   position: absolute;
@@ -186,18 +166,15 @@ SPLASH STYLES
     margin-top: 25px;
   }
 }
-
 /* --------------------
 PORTFOLIO STYLES
 -------------------- */
 .portfolio {
   min-height: 100%;
 }
-
 .portfolio .portfolio-row {
   padding-bottom: 10px;
 }
-
 .portfolio .portfolio-row .img-border {
   max-width: 500px;
   border: 4px solid #07A5B3;
@@ -207,11 +184,9 @@ PORTFOLIO STYLES
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-
 .portfolio .portfolio-row .img-border:hover {
   border-color: #E62093;
 }
-
 .portfolio .portfolio-row .img-border .portfolio-img {
   margin: 0 auto;
   display: block;
@@ -225,7 +200,6 @@ PORTFOLIO STYLES
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-
 .portfolio .portfolio-row .img-border .portfolio-img:hover {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
@@ -233,14 +207,12 @@ PORTFOLIO STYLES
   -o-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-
 .portfolio .portfolio-view-more {
   text-align: center;
   margin: 20px auto;
   width: auto;
   height: auto;
 }
-
 .portfolio .portfolio-view-more a {
   padding: 15px;
   border: solid 3px #07A5B3;
@@ -249,7 +221,6 @@ PORTFOLIO STYLES
   color: #333;
   letter-spacing: 1px;
 }
-
 .portfolio .portfolio-view-more a:hover {
   background-color: #07A5B3;
   border-color: #0E8E99;
@@ -261,35 +232,29 @@ PORTFOLIO STYLES
     margin: 75px;
   }
 }
-
 /* --------------------
 ABOUT STYLES
 -------------------- */
 .about {
   min-height: 100%;
 }
-
 .about .about-lead {
   font-size: 2.4rem;
   font-family: "Muli", "Helvetica", "Arial", "sans-serif";
   font-weight: 300;
 }
-
 .about .about-name {
   color: #E62093;
   font-weight: 400;
 }
-
 .about .about-img {
   max-width: 100%;
   margin-top: 25px;
 }
-
 .about .about-cv {
   margin-top: 30px;
   text-align: center;
 }
-
 .about .about-cv a {
   padding: 15px;
   border: solid 3px #07A5B3;
@@ -298,7 +263,6 @@ ABOUT STYLES
   color: #333;
   letter-spacing: 1px;
 }
-
 .about .about-cv a:hover {
   background-color: #07A5B3;
   border-color: #0E8E99;
@@ -313,33 +277,27 @@ ABOUT STYLES
     margin-top: 0px;
   }
 }
-
 /* --------------------
 CONTACT STYLES
 -------------------- */
 .contact {
   min-height: 100%;
 }
-
 .contact .form-title {
   text-align: center;
   margin-bottom: 25px;
 }
-
 .contact .form-control {
   border: 2px solid #07A5B3;
   border-radius: 0px;
   background-color: #fafafa;
 }
-
 .contact form label {
   text-align: right;
 }
-
 .contact form textarea {
   max-width: 100%;
 }
-
 .contact form #submit {
   border-radius: 0px;
   background-color: #f1f1f1;
@@ -352,7 +310,6 @@ CONTACT STYLES
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-
 .contact form #submit:hover {
   background-color: #07A5B3;
   border-color: #0E8E99;
@@ -362,16 +319,13 @@ CONTACT STYLES
 .contact-right {
   margin-top: 55px;
 }
-
 .contact-right .contact-highlight {
   color: #E62093;
   font-weight: 400;
 }
-
 .contact-right .contact-detail {
   font-size: 2.0rem;
 }
-
 .contact-right .contact-detail .contact-detail-right {
   text-align: right;
   float: right;
@@ -405,12 +359,10 @@ PORTFOLIO VIEW ALL STYLES
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-
 .portfolio-filter:hover {
   cursor: pointer;
   border: 3px solid #07A5B3;
 }
-
 .portfolio-filter h4 {
   font-size: 16px;
 }
@@ -426,12 +378,10 @@ PORTFOLIO VIEW ALL STYLES
   -webkit-align-content: flex-start;
   margin-bottom: 50px;
 }
-
 #Container .mix {
   display: none;
   text-align: center;
 }
-
 #Container .mix a img {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -448,10 +398,12 @@ PORTFOLIO VIEW ALL STYLES
   .portfolio-header {
     font-size: 5.2rem;
   }
+
   .portfolio-filter {
     padding: 10px;
     margin-bottom: 50px;
   }
+
   #Container .mix a img {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -467,7 +419,6 @@ PORTFOLIO VIEW ALL STYLES
     filter: grayscale(0%);
   }
 }
-
 /* --------------------
 PORTFOLIO ITEM PAGE STYLES
 -------------------- */
@@ -476,7 +427,6 @@ PORTFOLIO ITEM PAGE STYLES
   margin-bottom: 15px;
   padding: 10px;
 }
-
 .portfolio-item-outer .portfolio-caption {
   text-align: center;
   padding-top: 3px;
@@ -498,11 +448,9 @@ PORTFOLIO ITEM PAGE STYLES
   font-size: 18px;
   color: white;
 }
-
 .back-button:hover {
   height: 65px;
 }
-
 .back-button i {
   position: relative;
   top: -2px;
@@ -516,7 +464,6 @@ PORTFOLIO ITEM PAGE STYLES
   overflow: hidden;
   max-width: 100%;
 }
-
 .embed-container iframe, .embed-container object, .embed-container embed {
   position: absolute;
   top: 0;
@@ -533,7 +480,6 @@ html {
   height: 100%;
   font-size: 62.5%;
 }
-
 html body {
   width: 100%;
   height: 100%;
@@ -543,7 +489,6 @@ html body {
   color: #000;
   background-color: #f1f1f1;
 }
-
 html h1,
 html h2,
 html h3,
@@ -556,12 +501,10 @@ html h6 {
   font-weight: 400;
   letter-spacing: 1px;
 }
-
 html p {
   line-height: 1.5em;
   margin: 0, 0, 25px;
 }
-
 html a {
   color: #07A5B3;
   -webkit-transition: all 0.2s ease-out;
@@ -569,7 +512,6 @@ html a {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-
 html a:hover {
   text-decoration: none;
 }
@@ -592,7 +534,6 @@ html a:hover {
     padding-bottom: 200px;
   }
 }
-
 /* --------------------
     BORDER STYLES
 -------------------- */
@@ -637,17 +578,19 @@ html a:hover {
   .border-top {
     height: 8px;
   }
+
   .border-right {
     width: 8px;
   }
+
   .border-bottom {
     height: 8px;
   }
+
   .border-left {
     width: 8px;
   }
 }
-
 /* --------------------
 FOOTER STYLES
 -------------------- */
@@ -658,3 +601,5 @@ footer .container {
   border-top: 2px dashed #07A5B3;
   padding: 15px;
 }
+
+/*# sourceMappingURL=style.css.map */
