@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Kurt Stubbings">
-    <title>Aylesbury Skateboards | Kurt Stubbings Portfolio</title>
+    <title>Convex: Brand Project | Kurt Stubbings Portfolio</title>
     <link rel="shortcut icon" href="img/favicon.png">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Muli:300,400' rel='stylesheet' type='text/css'>
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/_plugins.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Muli:300,400' rel='stylesheet' type='text/css'>
 
     <!--[if IE]>
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -64,35 +65,26 @@
         <div class="portfolio-item-body">
             <div class="container">
                 <div class="row">
-                    <h1 class=" portfolio-header wow fadeInUp">Salisbury Cathedral: Magna Carta APp</h1>
+                    <h1 class=" portfolio-header wow fadeInUp">Convex: Brand Project</h1>
                 </div>
                 <div class="row">
                     <div class="col-md-5 col-md-offset-1 wow fadeInLeft" data-wow-delay="0.3s">
-                        <p>For a university project, we were tasked with designing and producing an iOS application for use by Salisbury Cathedral to celebrate the 800th anniversary of the signing of Magna Carta.</p>
-                        <p>This was a group project in which we formed mini agencies to simulate a real working enviroment. Group members included:</p>
-                        <ul id="group-list">
-                            <li><a href="http://ashleywilkie.co.uk/" target="_blank">Ashley Wilkie</a> - Project Manager</li>
-                            <li>Kurt Stubbings (myself) - Lead Programmer</li>
-                            <li><a href="http://www.alexsisan.co.uk/" target="_blank">Alex Sisan</a> - Programmer</li>
-                            <li>Kaylee Hawkins - Lead Designer</li>
-                            <li>Daniel Burden - Designer</li>
-                        </ul>
+                        <p>For a group project in my first year at university, we were tasked with idealising a futuristic design-fiction style company, complete with logo design and videos to demonstrate the products the company makes.</p>
+                        <p>The idea for Convex was based around a smart contact lens which gave the user a heads-up display as well as genetically improving their ability at tasks such as cooking, music and sports.</p>
                     </div>
                     <div class="col-md-5 wow fadeInRight" data-wow-delay="0.6s">
-                        <p>We created an iPad only application which allowed users to view and zoom into a high-resolution image of Magna Carta. The image was overlayed with hotspots which showed where the clauses were. Tapping an overlay would bring up the translation of that clause into English. The overlays could be filtered by specific categories.</p>
-                        <p>Salisbury Cathedral chose to use our application as part of their Magna Carta exhibition.</p>
+                        <p>We produced a series of short videos with the aim to showcase and advertise the benefits of the product, and then a website for them to go on which also provided more information about Convex.</p>
+                        <p>The website and associated content can be viewed <a href="http://www.kurtstubbings.com/convex/" target="_blank">here</a>.</p>
                     </div>
                 </div>
                 <div class="col-md-10 col-md-offset-1">
                     <div class="portfolio-item-outer wow fadeInUp" data-wow-delay="0.9s">
-                        <img class="img-responsive portfolio-item-image" src="img/portfolio/magna/magna-1.png">
-                        <p class="small wow flipInX portfolio-caption">App splash screen logo</p>
+                        <img class="img-responsive portfolio-item-image" src="img/portfolio/convex/convex-1.jpg">
+                        <p class="small wow flipInX portfolio-caption">Convex logo &amp; colour scheme</p>
                     </div>
                     <div class="portfolio-item-outer wow fadeInUp">
-                        <div class='embed-container'>
-                            <iframe src='https://player.vimeo.com/video/127952667' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                        </div>
-                        <p class="small wow flipInX portfolio-caption">Short video showing app interactions</p>
+                        <img class="img-responsive portfolio-item-image" src="img/portfolio/convex/convex-2.jpg">
+                        <p class="small wow flipInX portfolio-caption">Convex website homepage</p>
                     </div>
                 </div>
             </div>
@@ -120,38 +112,8 @@
 
 
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-
-    <script>
-        new WOW().init();
-
-        // jQuery to collapse the navbar on scroll
-        //        $(window).scroll(function () {
-        //            if ($(".navbar").offset().top > 50) {
-        //                $(".navbar-fixed-top").addClass("top-nav-collapse");
-        //            } else {
-        //                $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        //            }
-        //        });
-
-        // jQuery for page scrolling feature - requires jQuery Easing plugin
-        $(function () {
-            $('a.page-scroll').bind('click', function (event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1000, 'easeInOutQuart');
-                event.preventDefault();
-            });
-        });
-        // Closes the Responsive Menu on Menu Item Click
-        $('.navbar-collapse ul li a').click(function () {
-            $('.navbar-toggle:visible').click();
-        });
-    </script>
+    <script src="js/_plugins.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
